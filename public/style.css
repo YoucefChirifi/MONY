@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(111, 122, 132);
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+    height: 100vh;            /* Takes full viewport height */
+    margin: 0;                /* Remove default margin */
+}
+
+.en {
+    width: 600px;             /* Adjusted width for the form */
+    background-color: rgb(169, 203, 203);
+    display: flex;
+    flex-direction: column;   /* Stacks the form elements vertically */
+    align-items: center;      /* Centers form elements horizontally */
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.in {
+    height: 50px;
+    width: 250px;
+    border: 5px white solid;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 23px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sub {
+    width: 200px;
+    height: 70px;
+    color: brown;
+    background-color: green;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 23px;
+    font-size: 22px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#sub:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-size: 25px;
+}
+
+.l {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.in:focus {
+    border-color: rgb(57, 82, 79);
+    background-color: rgb(255, 255, 255);
+}
+
+#result {
+    position: relative;
+    right: 5px;
+    top: 20px;
+    width: 300px;
+    height: 60px;
+}
+
+#re {
+    position: relative;
+    top: 20px;
+    right: 25px;
+    color: rgb(49, 50, 54);
+}
+
+#rs {
+    position: relative;
+    top: 10px;
+    color: rgb(20, 59, 20);
+}
+
+/* Media Queries */
+
+/* For tablets (portrait mode) */
+@media (max-width: 768px) {
+    .en {
+        width: 90%;          /* Make the form 90% of the screen width */
+        padding: 15px;       /* Slightly reduce padding */
+    }
+
+    .in {
+        width: 80%;          /* Make the input fields wider */
+    }
+
+    #sub {
+        width: 80%;          /* Make the submit button wider */
+    }
+
+    .l {
+        font-size: 20px;     /* Adjust label size for smaller screens */
+    }
+}
+
+/* For mobile devices (portrait mode) */
+@media (max-width: 480px) {
+    .en {
+        width: 90%;          /* Make the form even smaller */
+        padding: 10px;       /* Reduce padding even more */
+    }
+
+    .in {
+        width: 80%;          /* Make input fields full width */
+        font-size: 18px;     /* Smaller font size */
+    }
+
+    #sub {
+        width: 80%;          /* Make the submit button full width */
+    }
+
+    .l {
+        font-size: 18px;     /* Reduce label size */
+    }
+}
+
+/* For large screens (desktop) */
+@media (min-width: 1024px) {
+    .en {
+        width: 600px;        /* Maintain original width on large screens */
+        padding: 30px;       /* Increase padding */
+    }
+
+    .in {
+        width: 250px;        /* Maintain input field width */
+    }
+
+    #sub {
+        width: 200px;        /* Maintain submit button width */
+    }
+
+    .l {
+        font-size: 25px;     /* Maintain label font size */
+    }
+}
